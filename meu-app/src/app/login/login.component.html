@@ -1,0 +1,13 @@
+<input [(ngModel)]="email" type="text" placeholder="email">
+<br>
+<input [(ngModel)]="senha" type="text" placeholder="senha">
+
+@if (email === "" || senha === ""){
+    <p>Campos obrigatórios</p>
+} 
+@else if (!email.includes("@") || senha.length < 6) {
+    <p>Credenciais inválidas</p>
+} 
+@else {
+    <p>Login bem sucedido</p>
+}

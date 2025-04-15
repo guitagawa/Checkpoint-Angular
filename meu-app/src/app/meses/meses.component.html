@@ -1,0 +1,18 @@
+<p>DIGITE O NÚMERO DO MÊS</p>
+<input [(ngModel)]="numero" type="number" />
+
+<div [ngSwitch]="+numero">
+  <p *ngSwitchCase="1">Janeiro</p>
+  <p *ngSwitchCase="2">Fevereiro</p>
+  <p *ngSwitchCase="3">Março</p>
+  <p *ngSwitchCase="4">Abril</p>
+  <p *ngSwitchCase="5">Maio</p>
+  <p *ngSwitchCase="6">Junho</p>
+  <p *ngSwitchCase="7">Julho</p>
+  <p *ngSwitchCase="8">Agosto</p>
+  <p *ngSwitchCase="9">Setembro</p>
+  <p *ngSwitchCase="10">Outubro</p>
+  <p *ngSwitchCase="11">Novembro</p>
+  <p *ngSwitchCase="12">Dezembro</p>
+  <p *ngSwitchDefault>Mês inválido</p>
+</div>

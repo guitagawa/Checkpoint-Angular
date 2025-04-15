@@ -1,0 +1,14 @@
+.exercicio{
+    border: 2px solid black;
+    padding: 5px;
+    margin: 25px;
+    
+    
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    
+}
+

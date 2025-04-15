@@ -1,0 +1,6 @@
+<ul>
+    @for (compra of compras; let i = $index; track $index){
+    <li>{{compra}}</li>
+    <button (click)="remover(i)">Remover</button>
+    }
+</ul>

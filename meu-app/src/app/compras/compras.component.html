@@ -1,0 +1,10 @@
+<ul *ngIf="compras.length > 0; else vazio">
+    <li *ngFor="let compra of compras">{{compra}}</li>
+</ul>
+
+
+<ng-template #vazio>
+
+    <p>Nenhuma compra na lista</p>
+
+</ng-template>

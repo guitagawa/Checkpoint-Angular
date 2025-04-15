@@ -1,0 +1,35 @@
+<select [(ngModel)]="opcao">
+    <option value="soma">soma</option>
+    <option value="subtracao">subtracao</option>
+    <option value="multiplicacao">multiplicacao</option>
+    <option value="divisao">divisao</option>
+
+</select>
+<br>
+<input [(ngModel)]="valor1" type="number">
+<br>
+<input [(ngModel)]="valor2" type="number">
+
+@switch (opcao) {
+    @case("soma"){
+        <p>Resultado: {{valor1+valor2}}</p>
+    }
+
+    @case("subtracao"){
+        <p>Resultado: {{valor1-valor2}}</p>
+    }
+
+    @case("multiplicacao"){
+        <p>Resultado: {{valor1*valor2}}</p>
+    }
+
+    @case("divisao"){
+        @if(valor2===0){
+            <p>Erro: divisao por zero</p>
+        }
+
+        @else{
+            <p>Resultado: {{valor1/valor2}}</p>
+        }
+    }
+}

@@ -1,0 +1,12 @@
+<ul>
+    @for (produto of produtos; track $index){
+        @if (produto.promocao){
+            <li class="promocao">Nome: {{produto.nome}} Preco: {{produto.preco}} Promocao: Sim</li>
+        }
+        @else{
+            <li style="color: black">Nome: {{produto.nome}} Preco: {{produto.preco}} Promocao: Nao</li>
+        }
+    } @empty {
+        <p>Nenhum produto cadastrado</p>
+    }
+</ul>

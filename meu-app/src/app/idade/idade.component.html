@@ -1,0 +1,8 @@
+<p>Idade</p>
+<input [(ngModel)]="idade" type="number">
+
+@if(idade >= 18){
+    <p>Acesso permitido</p>
+} @else {
+    <p>Acesso negado</p>
+}
